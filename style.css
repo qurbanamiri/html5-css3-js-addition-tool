@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: rgb(255, 255, 174);
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .details p{
+    padding: 20px 0;
+    color: rgb(245, 74, 74);
+    font-size: smaller;
+}
+.container :where(.details, .enter){
+    width: 100%;
+}
+.container .details {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+h1{
+    text-align: center;
+    box-shadow: 3px 3px 4px 2px rgba(88, 88, 88, 0.863);
+    color: rgb(205, 169, 50);
+}
+.enter{
+    display: flex;
+    justify-content: center;
+}
+.inputs{
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    height: 26px;
+}
+.inputs :where(.firstNo, .secondNo){
+    outline: 0;
+    border: 1px solid lightpink;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.enter button{
+    width: 100%;
+    outline: 0;
+    border: 1px solid lightskyblue;
+    background-color: rgb(228, 244, 249);
+    padding: 6px 10px;
+    border-radius: 7px;
+    margin: 5px 0;
+    font-size: 16px;
+    color: rgba(243, 143, 61, 0.911);
+    cursor: pointer;
+}
+.enter button:hover{
+    background-color: rgb(212, 242, 253);
+    transition: 1s;
+}
+.enter button:active{
+    background-color: rgb(162, 211, 242);
+    transition: all 200ms;
+}
+
+img{
+    margin: 0 6px;
+}
+.result{
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(53, 51, 51);
+    text-align: center;
+    display: none;
+}
